@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNITYCARE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="relative overflow-x-hidden font-body">
+    <header class="fixed z-50 w-screen bg-slate-50">
+      <div class="tophead">
+        <div
+          class="items-center justify-end hidden border-b wrapper border-slate-100 monitor:flex"
+        >
+          <ul class="flex gap-5 px-10">
+            <li
+              class="py-3 text-xs font-bold transition-all duration-300 ease-in-out cursor-pointer hover:text-green-600"
+            >
+              <a href="socialpolicy.html">SOCIAL POLICY</a>
+            </li>
+            <span class="pl-1 my-3 border-l border-black"></span>
+            <li
+              class="py-3 text-xs font-bold transition-all duration-300 ease-in-out cursor-pointer hover:text-green-600"
+            >
+              <a href="news.html">NEWS</a>
+            </li>
+            <li
+              class="py-3 text-xs font-bold transition-all duration-300 ease-in-out cursor-pointer hover:text-green-600"
+            >
+              EVENTS
+            </li>
+            <li
+              class="py-3 text-xs font-bold transition-all duration-300 ease-in-out cursor-pointer hover:text-green-600"
+            >
+              <a href="media.html">MEDIA</a>
+            </li>
+            <span class="pl-1 my-3 border-l border-black"></span>
+            <li
+              class="py-3 text-xs font-bold transition-all duration-300 ease-in-out cursor-pointer hover:text-green-600"
+            >
+              STAFF LOGIN
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav
+        class="navbar fixed w-screen flex justify-center bg-white shadow-[0px_4px_8px_rgba(0,0,0,0.3)] z-50"
+      >
+        <div
+          class="flex items-center justify-between w-screen py-2 wrapper monitor:py-6"
+        >
+          <h1 class="pl-5 text-2xl font-extrabold font-title text-PrimaryGreen">
+            <a href="index.html">UNITYCARE</a>
+          </h1>
+          <div class="flex pr-5 hamburger-menu monitor:hidden">
+            <button class="hamburger-button-on">
+              <img src="img/burger.svg" width="30px" alt="" />
+            </button>
+            <button class="hidden button-close">
+              <img src="img/burger-close.svg" width="30px" alt="" />
+            </button>
+          </div>
+
+          <div class="items-center hidden gap-px pr-6 options monitor:flex">
+            <div
+              class="float-left overflow-hidden rounded-md dropdown hover:bg-LightGreen"
+            >
+              <button
+                class="dropbtn flex items-center m-0 cursor-pointer text-[16px] py-[14px] px-4 hover:bg-LightGreen rounded-md"
+                onclick="toggleDropdown('myDropdown')"
+              >
+                SERVICES
+                <img
+                  class="pl-[4px] pointer-events-none"
+                  src="img/dropdown.svg"
+                  alt=""
+                />
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div
+                class="dropdown-content hidden absolute bg-white min-w-[300px] border border-solid border-[rgb(209,206,206)] rounded-md shadow-[0px_8px_16px_0px_rgba(0,0,0,0.2)] z-[1]"
+                id="myDropdown"
+              >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="services.html"
+                  >Services</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Disability services</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Foster care</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Aged care</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Child,youth and family</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Mental health</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Homelessness support</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Alcohol and other drug counseling</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Refugees and asylum seekers</a
+                >
+              </div>
+            </div>
+            <div
+              class="float-left overflow-hidden rounded-md dropdown hover:bg-LightGreen"
+            >
+              <button
+                class="dropbtn flex items-center m-0 cursor-pointer text-[16px] py-[14px] px-4 hover:bg-[rbg(231,241,232)] rounded-md"
+                onclick="toggleDropdown('dropdown2')"
+              >
+                ABOUT US
+                <img
+                  class="pl-[4px] pointer-events-none"
+                  src="img/dropdown.svg"
+                  alt=""
+                />
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div
+                class="dropdown-content hidden absolute bg-white min-w-[300px] border border-solid border-[rgb(209,206,206)] rounded-md shadow-[0px_8px_16px_0px_rgba(0,0,0,0.2)] z-[1]"
+                id="dropdown2"
+              >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="about.html"
+                  >About Us</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Our values</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Meet the executive</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Meet the board</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Annual reports</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Governance and privacy</a
+                >
+              </div>
+            </div>
+            <div
+              class="float-left overflow-hidden rounded-md dropdown hover:bg-LightGreen"
+            >
+              <button
+                class="dropbtn flex items-center m-0 cursor-pointer text-[16px] py-[14px] px-4 hover:bg-[rbg(231,241,232)] rounded-md"
+                onclick="toggleDropdown('dropdown3')"
+              >
+                OUR APPROACH
+                <img
+                  class="pl-[4px] pointer-events-none"
+                  src="img/dropdown.svg"
+                  alt=""
+                />
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div
+                class="dropdown-content hidden absolute bg-white min-w-[300px] border border-solid border-[rgb(209,206,206)] rounded-md shadow-[0px_8px_16px_0px_rgba(0,0,0,0.2)] z-[1]"
+                id="dropdown3"
+              >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Our approach</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Child,youth and family</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Practice Governance</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Evidence informed strategy</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Learn without barriers</a
+                >
+              </div>
+            </div>
+            <div class="career py-[14px] px-5 hover:bg-LightGreen rounded">
+              CAREERS
+            </div>
+            <div
+              class="float-left overflow-hidden rounded-md dropdown hover:bg-LightGreen"
+            >
+              <button
+                class="dropbtn flex items-center m-0 cursor-pointer text-[16px] py-[14px] px-4 hover:bg-[rbg(231,241,232)] rounded-md"
+                onclick="toggleDropdown('dropdown4')"
+              >
+                CONTACT US
+                <img
+                  class="pl-[4px] pointer-events-none"
+                  src="img/dropdown.svg"
+                  alt=""
+                />
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div
+                class="dropdown-content hidden absolute bg-white min-w-[300px] border border-solid border-[rgb(209,206,206)] rounded-md shadow-[0px_8px_16px_0px_rgba(0,0,0,0.2)] z-[1] right-0"
+                id="dropdown4"
+              >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Contact us</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Complaints or feedback</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Request for record or information</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Pay for service</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Leave a gift in your will</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Make a donation</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- responsive menu -->
+
+      <div
+        class="overlay hidden fixed left-0 top-[-100%] w-full h-screen bg-white items-center gap-px pr-6 -z-10 laptop:hidden"
+      >
+        <div class="w-screen overflow-hidden accordion">
+          <div class="accordion-item">
+            <button
+              class="accordion-btn hover:bg-LightGreen"
+            >
+              Item 1
+            </button>
+            <div
+              class="accordion-content"
+            >
+              <p
+                class="accordion-options hover:bg-LightGreen"
+              >
+                Option 1
+              </p>
+              <p
+                class="accordion-options hover:bg-LightGreen"
+              >
+                Option 2
+              </p>
+              <p
+                class="accordion-options hover:bg-LightGreen"
+              >
+                Option 3
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button
+              class="accordion-btn hover:bg-LightGreen"
+            >
+              Item 2
+            </button>
+            <div
+              class="accordion-content"
+            >
+              <p
+                class="accordion-options hover:bg-LightGreen"
+              >
+                Option 1
+              </p>
+              <p
+                class="accordion-options hover:bg-LightGreen"
+              >
+                Option 2
+              </p>
+              <p
+                class="accordion-options hover:bg-LightGreen"
+              >
+                Option 3
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main content -->
+
+    <div class="content">
+      <main
+        class="relative flex pt-12 justify-center items-center bg-PrimaryGreen monitor:pt-[137px]"
+      >
+        <div class="flex justify-center overflow-hidden wrapper">
+          <div
+            class="bgImage absolute w-full h-1/3 max-w-[2000px] bg-[linear-gradient(rgba(0,0,0,0.09),rgba(0,0,0,0.2)),radial-gradient(circle,#0000_70%,rgba(0,0,0,0.57)_100%),url('img/hero-banner-aged-care.jpg')] bg-cover bg-center bg-no-repeat tab:h-2/5 monitor:h-5/6"
+          ></div>
+          <div class="container1 w-full pt-[100px] z-10">
+            <div class="title flex flex-col items-center pb-[100px] text-white">
+              <h1
+                class="text-5xl text-center px-[50px] font-title font-extrabold tab:text-7xl"
+              >
+                UNITYCARE
+              </h1>
+              <p
+                class="hidden px-5 text-2xl font-extrabold text-center monitor:block"
+              >
+                Our purpose is to partner with people and change lives for the
+                better
+              </p>
+            </div>
+
+            <p
+              class="px-5 pt-16 text-xl font-extrabold text-center text-white tab:text-2xl monitor:hidden"
+            >
+              Our purpose is to partner with people and change lives for the
+              better
+            </p>
+            <div
+              class="relative flex flex-col justify-center gap-2 pb-8 mainCards pt-11 px-9 tab:grid tab:grid-cols-2 tab:grid-rows-3 tab:gap-2 tab:gap-x-4 tab:px-pageSidePad tab:pb-0 laptop:flex laptop:flex-row laptop:gap-6 laptop:pb-24 laptop:pr-9 laptop:pl-9 monitor:pt-9"
+            >
+              <div
+                class="justify-start transition-all squareCard laptop:w-48 laptop:h-48 laptop:rounded-xl laptop:justify-center duration-400 ease laptop:hover:text-white laptop:hover:scale-110 laptop:hover:bg-MyPink first"
+              >
+                <div
+                  class="flex items-center gap-8 px-3 laptop:gap-5 laptop:flex-col one"
+                >
+                  <div
+                    class="flex items-center justify-center w-16 h-16 my-1 bg-pink-100 rounded-full laptop:w-20 laptop:h-20"
+                  >
+                    <img class="laptop:w-14" src="img/foster.svg" alt="" />
+                  </div>
+                  <p class="font-bold text-center">Foster Care</p>
+                </div>
+              </div>
+
+              <div
+                class="justify-start transition-all squareCard laptop:w-48 laptop:h-48 laptop:rounded-xl laptop:justify-center duration-400 ease laptop:hover:text-white laptop:hover:scale-110 laptop:hover:bg-MyBlue second"
+              >
+                <div
+                  class="flex items-center gap-8 px-3 laptop:gap-5 laptop:flex-col two"
+                >
+                  <div
+                    class="flex items-center justify-center w-16 h-16 my-1 bg-blue-100 rounded-full laptop:w-20 laptop:h-20"
+                  >
+                    <img class="laptop:w-14" src="img/disability.svg" alt="" />
+                  </div>
+                  <p class="font-bold text-center">Disability</p>
+                </div>
+              </div>
+
+              <div
+                class="justify-start transition-all squareCard laptop:w-48 laptop:h-48 laptop:rounded-xl laptop:justify-center duration-400 ease laptop:hover:text-white laptop:hover:scale-110 laptop:hover:bg-teal-500 third"
+              >
+                <div
+                  class="flex items-center gap-8 px-3 laptop:gap-5 laptop:flex-col three"
+                >
+                  <div
+                    class="flex items-center justify-center w-16 h-16 my-1 bg-teal-100 border rounded-full laptop:w-20 laptop:h-20"
+                  >
+                    <img class="laptop:w-14" src="img/agedcare.svg" alt="" />
+                  </div>
+                  <p class="font-bold text-center">Aged Care</p>
+                </div>
+              </div>
+
+              <div
+                class="justify-start transition-all squareCard laptop:w-48 laptop:h-48 laptop:rounded-xl laptop:justify-center duration-400 ease laptop:hover:text-white laptop:hover:scale-110 laptop:hover:bg-SecondaryGreen fourth"
+              >
+                <div
+                  class="flex items-center gap-8 px-3 laptop:gap-5 laptop:flex-col four"
+                >
+                  <div
+                    class="flex items-center justify-center w-16 h-16 my-1 bg-green-100 rounded-full laptop:w-20 laptop:h-20"
+                  >
+                    <img class="laptop:w-14" src="img/more.svg" alt="" />
+                  </div>
+                  <p class="font-bold text-center">More Services</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="review bg-PrimaryGreen">
+        <div class="mx-auto overflow-hidden md:max-w-screen-xl">
+          <div class="md:grid md:grid-cols-[1.5fr_2fr] md:items-center">
+            <img
+              class="h-[18rem] w-full object-cover md:h-full"
+              src="img/review.jpg"
+              alt="My image alt description"
+            />
+            <div class="py-8 px-mobileSidePad tab:px-pageSidePad">
+              <h1
+                href="#"
+                class="block mt-1 text-4xl font-extrabold text-white tab:text-6xl"
+              >
+                Year in review 2023
+              </h1>
+              <p class="mt-2 text-base font-extrabold text-white tab:text-xl">
+                Collaborating for Impact, UNITYCARE Annual Report 2022-2023.
+              </p>
+              <button
+                class="w-full mt-2 myButton bg-SecondaryGreen md:w-auto md:px-10"
+              >
+                <!-- py-[18px] w-full text-base font-medium font-body text-white border-none rounded-md cursor-pointer -->
+                LEARN MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-center about px-mobileSidePad tab:px-pageSidePad"
+      >
+        <div
+          class="wrapper max-w-screen-xl text-center py-[62px] overflow-x-hidden"
+        >
+          <h1 class="text-3xl font-bold tab:text-4xl">About UNITYCARE</h1>
+          <p class="p-[19px] max-w-[630px] min-w-[290px]">
+            We believe what unites us are the rights we have and should all
+            enjoy as human beings. Yet the opportunity to live freely, without
+            significant barriers, is not afforded to all Australians. This
+            drives us, a collective of diverse and passionate people to partner
+            through relationships and change lives for the better.
+          </p>
+          <button class="w-auto px-10 myButton bg-PrimaryGreen">
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-PrimaryOrange">
+        <div class="mx-auto overflow-hidden md:max-w-screen-xl">
+          <div class="items-center md:grid md:grid-cols-[2fr_1.5fr]">
+            <img
+              class="h-[18rem] w-full object-cover md:h-full"
+              src="img/bussiness.jpg"
+              alt="My image alt description"
+            />
+            <div
+              class="py-8 px-mobileSidePad md:row-start-1 tab:px-pageSidePad"
+            >
+              <h1
+                href="#"
+                class="block mt-1 text-4xl font-extrabold text-white tab:text-6xl"
+              >
+                UNITYCARE Elevate Reconciliation Action Plan
+              </h1>
+              <p class="mt-2 text-base font-extrabold text-white tab:text-xl">
+                Collaborating for Impact, UNITYCARE Annual Report 2022-2023.
+              </p>
+              <button
+                class="w-full mt-2 myButton bg-SecondaryOrange md:w-auto md:px-10"
+              >
+                LEARN MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center news">
+        <div
+          class="flex justify-center wrapper px-mobileSidePad tab:px-pageSidePad"
+        >
+          <div class="container relative flex flex-col max-w-screen-xl py-10">
+            <h6 class="pb-5">NEWS</h6>
+            <div
+              class="grid justify-between gap-0 primaryRecCards laptop:flex laptop:flex-row laptop:gap-6"
+            >
+              <div
+                class="primaryRecCard laptop:pb-14 laptop:rounded laptop:shadow-[5px_5px_32px_-10px_rgba(0,0,0,0.5)] laptop:w-1/3 One"
+              >
+                <div class="hidden imgContainer laptop:block">
+                  <img
+                    class="laptop:w-full laptop:object-contain laptop:rounded-t-[5px]"
+                    src="img/newone.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="newsItems newsone pt-3 leading-7 laptop:pl-[10px] laptop:border-t-8 laptop:border-solid laptop:border-MyPink"
+                >
+                  <h5 class="pink">Foster Care</h5>
+                  <h3
+                    class="transition-all duration-300 ease-in-out text-[27px] font-bold cursor-pointer hover:text-MyPink"
+                  >
+                    Foster care and a great show of inclusion at Midsumma
+                    Carnival 20...
+                  </h3>
+                  <p class="py-3">
+                    Midsumma Carnival highlights the opening weekend of the
+                    three-week-long Midsumma Festival each year.
+                  </p>
+                  <span class="cursor-pointer pink text-MyPink">Read more</span>
+                </div>
+              </div>
+              <div
+                class="primaryRecCard laptop:pb-14 laptop:rounded laptop:shadow-[5px_5px_32px_-10px_rgba(0,0,0,0.5)] laptop:w-1/3 Two"
+              >
+                <div class="hidden imgContainer laptop:block">
+                  <img
+                    class="laptop:w-full laptop:object-contain laptop:rounded-t-[5px]"
+                    src="img/newstwo.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="newsItems newstwo pt-3 leading-7 laptop:pl-[10px] laptop:border-t-8 laptop:border-solid border-MyBlue"
+                >
+                  <h5 class="blue">Foster Care</h5>
+                  <h3
+                    class="transition-all duration-300 ease-in-out text-[27px] font-bold cursor-pointer hover:text-MyBlue"
+                  >
+                    Foster care and a great show of inclusion at Midsumma
+                    Carnival 20...
+                  </h3>
+                  <p class="py-3">
+                    Midsumma Carnival highlights the opening weekend of the
+                    three-week-long Midsumma Festival each year.
+                  </p>
+                  <span class="cursor-pointer blue text-MyBlue">Read more</span>
+                </div>
+              </div>
+              <div
+                class="primaryRecCard laptop:pb-14 laptop:rounded laptop:shadow-[5px_5px_32px_-10px_rgba(0,0,0,0.5)] laptop:w-1/3 Three"
+              >
+                <div class="hidden imgContainer laptop:block">
+                  <img
+                    class="laptop:w-full laptop:object-contain laptop:rounded-t-[5px]"
+                    src="img/newone.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="newsItems newsthree pt-3 leading-7 laptop:pl-[10px] laptop:border-t-8 laptop:border-solid border-PrimaryOrange"
+                >
+                  <h5 class="orange">Foster Care</h5>
+                  <h3
+                    class="transition-all duration-300 ease-in-out text-[27px] font-bold cursor-pointer hover:text-PrimaryOrange"
+                  >
+                    Foster care and a great show of inclusion at Midsumma
+                    Carnival 20...
+                  </h3>
+                  <p class="py-3">
+                    Midsumma Carnival highlights the opening weekend of the
+                    three-week-long Midsumma Festival each year.
+                  </p>
+                  <span class="cursor-pointer orange text-PrimaryOrange"
+                    >Read more</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="justify-center block team bg-LightGreen px-mobileSidePad tab:px-pageSidePad laptop:flex"
+      >
+        <div
+          class="wrapper flex flex-col max-w-screen-xl py-[50px] gap-4 laptop:flex-row"
+        >
+          <div class="relative left up">
+            <div class="leftText">
+              <h1
+                class="text-3xl font-bold text-center tab:text-4xl laptop:text-left"
+              >
+                Want to join our team?
+              </h1>
+              <p class="hidden py-5 pr-1 text-base font-semibold laptop:block">
+                The UNITYCARE community includes over 8,000 staff working with
+                thousands of people across Australia. We are always on the
+                lookout for passionate, values driven people to join our team.
+              </p>
+            </div>
+            <div
+              class="py-[18px] px-10 text-base font-medium font-body text-white border-none rounded-md cursor-pointer"
+            >
+              <button
+                class="absolute bottom-0 left-0 hidden px-10 myButton bg-PrimaryGreen laptop:block"
+              >
+                VISIT CAREERS PAGE
+              </button>
+            </div>
+          </div>
+          <div class="right w-auto laptop:w-[130%] down">
+            <ul
+              class="bg-white rounded-md py-2 px-[30px] shadow-[5px_5px_32px_-10px_rgba(0,0,0,0.5);]"
+            >
+              <li class="py-[18px] pl-2 hover:bg-LightGreen">
+                Youth Worker. Casual - Mackay
+              </li>
+              <li
+                class="py-[18px] pl-2 border-y border-solid border-slate-200 hover:bg-LightGreen"
+              >
+                Female Community Support Worker (DFV Shelter). Casual - Cooktown
+              </li>
+              <li class="py-[18px] pl-2 hover:bg-LightGreen">
+                Disability Support Leader. Permanent Full Time - Perth
+              </li>
+            </ul>
+            <p class="pt-6">See all vacancies</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-center policy"
+        style="background-image: url(&quot;img/pattern.jpg&quot;)"
+      >
+        <div
+          class="flex justify-center wrapper px-mobileSidePad tab:px-pageSidePad"
+        >
+          <div class="container relative flex flex-col max-w-screen-xl py-10">
+            <h1 class="px-4 py-5 text-3xl font-bold text-center tab:text-4xl">
+              How we influence social policy
+            </h1>
+            <div
+              class="grid justify-between grid-cols-1 grid-rows-2 gap-6 secondaryRecCards tab:grid-cols-2 laptop:flex"
+            >
+              <div
+                class="secondaryRecCard laptop:w-1/3 laptop:py-[155px] oneCard"
+              >
+                <div class="flex items-center justify-center secCardImg">
+                  <img class="max-w-none" src="img/foster.svg" alt="" />
+                </div>
+                <div class="texts pt-3 px-[10px] leading-7 text-center">
+                  <h1 class="text-[32px] font-bold leading-[32px]">
+                    Lorem ipsum dolor sit amet.
+                  </h1>
+                  <p class="py-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa, minima?
+                  </p>
+                </div>
+                <span>Read more</span>
+              </div>
+              <div
+                class="secondaryRecCard laptop:w-1/3 laptop:py-[155px] twoCard"
+              >
+                <div class="flex items-center justify-center secCardImg">
+                  <img class="max-w-none" src="img/foster.svg" alt="" />
+                </div>
+                <div class="texts pt-3 px-[10px] leading-7 text-center">
+                  <h1 class="text-[32px] font-bold leading-[32px]">
+                    Lorem ipsum dolor sit amet.
+                  </h1>
+                  <p class="py-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa, minima?
+                  </p>
+                </div>
+                <span>Read more</span>
+              </div>
+              <div
+                class="secondaryRecCard laptop:w-1/3 laptop:py-[155px] threeCard"
+              >
+                <div class="flex items-center justify-center secCardImg">
+                  <img class="max-w-none" src="img/foster.svg" alt="" />
+                </div>
+                <div class="texts pt-3 px-[10px] leading-7 text-center">
+                  <h1 class="text-[32px] font-bold leading-[32px]">
+                    Lorem ipsum dolor sit amet.
+                  </h1>
+                  <p class="py-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa, minima?
+                  </p>
+                </div>
+                <span>Read more</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer
+        class="relative flex justify-center text-white bg-black px-mobileSidePad tab:px-pageSidePad"
+      >
+        <div class="flex flex-col max-w-screen-xl pt-5 wrapper">
+          <h1 class="pb-5 text-2xl font-title">UNITYCARE</h1>
+          <div
+            class="pb-5 border-t-2 border-red-800 border-solid seperator"
+          ></div>
+          <div
+            class="lists relative block gap-5 tab:grid tab:grid-cols-[1fr_1fr_1fr] laptop:grid-cols-[1fr_2fr_1fr]"
+          >
+            <div class="listOne">
+              <h5 class="pt-5 text-[12px] font-[500]">CONTACT DETAILS</h5>
+              <li
+                class="pt-5 text-[27px] font-extrabold list-none cursor-pointer transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+              >
+                1800 000 000
+              </li>
+              <li
+                class="pt-5 text-[18px] font-extrabold list-none cursor-pointer transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+              >
+                <a href="">info@unitycare.org.au</a>
+              </li>
+              <div class="flex gap-5 pt-5 logo">
+                <div class="flex w-5 contImg">
+                  <img
+                    class="object-contain w-full"
+                    src="img/facebook-icon-white-png.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex w-5 contImg">
+                  <img
+                    class="object-contain w-full"
+                    src="img/insta.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex w-5 contImg">
+                  <img
+                    class="object-contain w-full"
+                    src="img/X_logo_2023_(white).png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex w-5 contImg">
+                  <img
+                    class="object-contain w-full"
+                    src="img/white-home.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="hidden pt-5 imageWrapper tab:block w-28">
+                <img
+                  class="object-contain w-full"
+                  src="img/registered-charity.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="listTwo">
+              <h5 class="pt-5 text-[12px] font-[400]">USEFUL LINKS</h5>
+              <ul class="twoContains columns-1 gap-x-[20px] laptop:columns-2">
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >Disability services</a
+                  >
+                </li>
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >Foster care</a
+                  >
+                </li>
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >All services</a
+                  >
+                </li>
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >Careers</a
+                  >
+                </li>
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >Governance and privacy</a
+                  >
+                </li>
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >Policy centre</a
+                  >
+                </li>
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >Employment Without Barriers</a
+                  >
+                </li>
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >Diversity and inclusion</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="listThree text-[12px] font-[400]">
+              <h5 class="pt-5">RECONCILIATION STATEMENT</h5>
+              <p class="pt-5 pb-3 text-base leading-6 tracking-wide">
+                In the spirit of Reconciliation, UNITYCARE acknowledges
+                Aboriginal and Torres Strait Islander peoples as the Traditional
+                Owners and Custodians of this country, and acknowledges their
+                connection to land, water and community. We pay our respect to
+                them, their cultures and customs, and to Elders past, present
+                and emerging.
+              </p>
+              <p
+                class="pt-5 pb-3 text-base underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+              >
+                <a href="">Learn more about our steps towards reconciliation</a>
+              </p>
+              <div class="pt-5 imageWrapper2 w-36 tab:hidden">
+                <img
+                  class="object-contain w-full"
+                  src="img/registered-charity.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="copyright pt-24 pb-9 leading-[0px]">
+            <li class="pt-5 text-[11px] list-none">
+              &copy 2024 UNITYCARE. All rights reserved.
+            </li>
+            <li class="pt-5 text-[11px] list-none">ABN 15 101 252 171</li>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

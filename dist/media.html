@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEDIA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="relative overflow-x-hidden font-body">
+    <header class="fixed z-50 w-screen bg-slate-50">
+      <div class="tophead">
+        <div
+          class="items-center justify-end hidden border-b wrapper border-slate-100 monitor:flex"
+        >
+          <ul class="flex gap-5 px-10">
+            <li
+              class="py-3 text-xs font-bold transition-all duration-300 ease-in-out cursor-pointer hover:text-green-600"
+            >
+              <a href="socialpolicy.html">SOCIAL POLICY</a>
+            </li>
+            <span class="pl-1 my-3 border-l border-black"></span>
+            <li
+              class="py-3 text-xs font-bold transition-all duration-300 ease-in-out cursor-pointer hover:text-green-600"
+            >
+              <a href="news.html">NEWS</a>
+            </li>
+            <li
+              class="py-3 text-xs font-bold transition-all duration-300 ease-in-out cursor-pointer hover:text-green-600"
+            >
+              EVENTS
+            </li>
+            <li
+              class="py-3 text-xs font-bold transition-all duration-300 ease-in-out cursor-pointer hover:text-green-600"
+            >
+              <a href="media.html">MEDIA</a>
+            </li>
+            <span class="pl-1 my-3 border-l border-black"></span>
+            <li
+              class="py-3 text-xs font-bold transition-all duration-300 ease-in-out cursor-pointer hover:text-green-600"
+            >
+              STAFF LOGIN
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav
+        class="navbar fixed w-screen flex justify-center bg-white shadow-[0px_4px_8px_rgba(0,0,0,0.3)] z-50"
+      >
+        <div
+          class="flex items-center justify-between w-screen py-2 wrapper monitor:py-6"
+        >
+          <h1 class="pl-5 text-2xl font-extrabold font-title text-PrimaryGreen">
+            <a href="index.html">UNITYCARE</a>
+          </h1>
+          <div class="flex pr-5 hamburger-menu monitor:hidden">
+            <button class="hamburger-button-on">
+              <img src="img/burger.svg" width="30px" alt="" />
+            </button>
+            <button class="hidden button-close">
+              <img src="img/burger-close.svg" width="30px" alt="" />
+            </button>
+          </div>
+
+          <div class="items-center hidden gap-px pr-6 options monitor:flex">
+            <div
+              class="float-left overflow-hidden rounded-md dropdown hover:bg-LightGreen"
+            >
+              <button
+                class="dropbtn flex items-center m-0 cursor-pointer text-[16px] py-[14px] px-4 hover:bg-LightGreen rounded-md"
+                onclick="toggleDropdown('myDropdown')"
+              >
+                SERVICES
+                <img
+                  class="pl-[4px] pointer-events-none"
+                  src="img/dropdown.svg"
+                  alt=""
+                />
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div
+                class="dropdown-content hidden absolute bg-white min-w-[300px] border border-solid border-[rgb(209,206,206)] rounded-md shadow-[0px_8px_16px_0px_rgba(0,0,0,0.2)] z-[1]"
+                id="myDropdown"
+              >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="services.html"
+                  >Services</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Disability services</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Foster care</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Aged care</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Child,youth and family</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Mental health</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Homelessness support</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Alcohol and other drug counseling</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Refugees and asylum seekers</a
+                >
+              </div>
+            </div>
+            <div
+              class="float-left overflow-hidden rounded-md dropdown hover:bg-LightGreen"
+            >
+              <button
+                class="dropbtn flex items-center m-0 cursor-pointer text-[16px] py-[14px] px-4 hover:bg-[rbg(231,241,232)] rounded-md"
+                onclick="toggleDropdown('dropdown2')"
+              >
+                ABOUT US
+                <img
+                  class="pl-[4px] pointer-events-none"
+                  src="img/dropdown.svg"
+                  alt=""
+                />
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div
+                class="dropdown-content hidden absolute bg-white min-w-[300px] border border-solid border-[rgb(209,206,206)] rounded-md shadow-[0px_8px_16px_0px_rgba(0,0,0,0.2)] z-[1]"
+                id="dropdown2"
+              >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="about.html"
+                  >About Us</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Our values</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Meet the executive</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Meet the board</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Annual reports</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Governance and privacy</a
+                >
+              </div>
+            </div>
+            <div
+              class="float-left overflow-hidden rounded-md dropdown hover:bg-LightGreen"
+            >
+              <button
+                class="dropbtn flex items-center m-0 cursor-pointer text-[16px] py-[14px] px-4 hover:bg-[rbg(231,241,232)] rounded-md"
+                onclick="toggleDropdown('dropdown3')"
+              >
+                OUR APPROACH
+                <img
+                  class="pl-[4px] pointer-events-none"
+                  src="img/dropdown.svg"
+                  alt=""
+                />
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div
+                class="dropdown-content hidden absolute bg-white min-w-[300px] border border-solid border-[rgb(209,206,206)] rounded-md shadow-[0px_8px_16px_0px_rgba(0,0,0,0.2)] z-[1]"
+                id="dropdown3"
+              >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Our approach</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Child,youth and family</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Practice Governance</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Evidence informed strategy</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Learn without barriers</a
+                >
+              </div>
+            </div>
+            <div class="career py-[14px] px-5 hover:bg-LightGreen rounded">
+              CAREERS
+            </div>
+            <div
+              class="float-left overflow-hidden rounded-md dropdown hover:bg-LightGreen"
+            >
+              <button
+                class="dropbtn flex items-center m-0 cursor-pointer text-[16px] py-[14px] px-4 hover:bg-[rbg(231,241,232)] rounded-md"
+                onclick="toggleDropdown('dropdown4')"
+              >
+                CONTACT US
+                <img
+                  class="pl-[4px] pointer-events-none"
+                  src="img/dropdown.svg"
+                  alt=""
+                />
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div
+                class="dropdown-content hidden absolute bg-white min-w-[300px] border border-solid border-[rgb(209,206,206)] rounded-md shadow-[0px_8px_16px_0px_rgba(0,0,0,0.2)] z-[1] right-0"
+                id="dropdown4"
+              >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Contact us</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Complaints or feedback</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Request for record or information</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Pay for service</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Leave a gift in your will</a
+                >
+                <a
+                  class="dropdown-item hover:bg-LightGreen"
+                  href="#"
+                  >Make a donation</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- responsive menu -->
+
+      <div
+        class="overlay hidden fixed left-0 top-[-100%] w-full h-screen bg-white items-center gap-px pr-6 -z-10 laptop:hidden"
+      >
+        <div class="w-screen overflow-hidden accordion">
+          <div class="accordion-item">
+            <button
+              class="accordion-btn hover:bg-LightGreen"
+            >
+              Item 1
+            </button>
+            <div
+              class="accordion-content"
+            >
+              <p
+                class="accordion-options hover:bg-LightGreen"
+              >
+                Option 1
+              </p>
+              <p
+                class="accordion-options hover:bg-LightGreen"
+              >
+                Option 2
+              </p>
+              <p
+                class="accordion-options hover:bg-LightGreen"
+              >
+                Option 3
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button
+              class="accordion-btn hover:bg-LightGreen"
+            >
+              Item 2
+            </button>
+            <div
+              class="accordion-content"
+            >
+              <p
+                class="accordion-options hover:bg-LightGreen"
+              >
+                Option 1
+              </p>
+              <p
+                class="accordion-options hover:bg-LightGreen"
+              >
+                Option 2
+              </p>
+              <p
+                class="accordion-options hover:bg-LightGreen"
+              >
+                Option 3
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main content -->
+
+    <div class="content">
+      <div
+        class="banner bg-PrimaryGreen pt-12 monitor:pt-[137px] px-mobileSidePad tab:px-pageSidePad"
+      >
+        <div class="mx-auto overflow-hidden md:max-w-screen-xl laptop:w-[1280px]">
+          <div class="items-center laptop:grid laptop:grid-cols-[2fr_1.5fr]">
+            <div
+              class="flex flex-col py-20 text-center laptop:text-left laptop:row-start-1"
+            >
+              <h1
+                href="#"
+                class="block mt-1 text-4xl font-extrabold text-white tab:text-6xl"
+              >
+                Media releases
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-center about px-mobileSidePad tab:px-pageSidePad"
+      >
+        <div
+          class="wrapper max-w-screen-xl text-left py-[62px] overflow-x-hidden w-[1280px]"
+        >
+          <h1 class="text-3xl font-bold tab:text-4xl">
+            Latest Media Releases at Life Without Barriers
+          </h1>
+          <p class="py-3 max-w-4xl min-w-[290px]">
+            Media Releases, statements and the latest news from across our
+            organisation as we strive to deliver excellent services, break
+            barriers to inclusion and change lives for the better.
+          </p>
+          <p class="py-3 max-w-4xl min-w-[290px]">
+            For media enquiries, please contact by emailing media@lwb.org.au
+          </p>
+          <p class="py-3 max-w-4xl min-w-[290px]">
+            If you would like to subscribe to our newsletter, please click the
+            button below.
+          </p>
+          <button class="w-auto px-16 myButton bg-PrimaryGreen">
+            SUBSCRIBE TO NEWSLETTER
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-center px-mobileSidePad tab:px-pageSidePad highlight"
+      >
+        <div class="flex flex-col wrapper w-[1280px]">
+          <div class="relative flex flex-col items-start justify-start py-10">
+            <div class="grid justify-between gap-0 primaryRecCards">
+              <div class="pb-0 primaryRecCard One">
+                <div class="pt-3 leading-7 newsItems newsone">
+                  <h5 class="pink">Foster Care</h5>
+                  <h3
+                    class="transition-all duration-300 ease-in-out text-[27px] font-bold cursor-pointer hover:text-MyPink"
+                  >
+                    Foster care and a great show of inclusion at Midsumma
+                    Carnival 20...
+                  </h3>
+                  <p class="py-3">
+                    Midsumma Carnival highlights the opening weekend of the
+                    three-week-long Midsumma Festival each year.
+                  </p>
+                  <span class="cursor-pointer pink text-MyPink">Read more</span>
+                </div>
+              </div>
+              <div class="pb-0 primaryRecCard Two">
+                <div class="pt-3 leading-7 newsItems newstwo">
+                  <h5 class="blue">Foster Care</h5>
+                  <h3
+                    class="transition-all duration-300 ease-in-out text-[27px] font-bold cursor-pointer hover:text-MyBlue"
+                  >
+                    Foster care and a great show of inclusion at Midsumma
+                    Carnival 20...
+                  </h3>
+                  <p class="py-3">
+                    Midsumma Carnival highlights the opening weekend of the
+                    three-week-long Midsumma Festival each year.
+                  </p>
+                  <span class="cursor-pointer blue text-MyBlue">Read more</span>
+                </div>
+              </div>
+              <div class="pb-0 primaryRecCard Three">
+                <div class="pt-3 leading-7 newsItems newsthree">
+                  <h5 class="orange">Foster Care</h5>
+                  <h3
+                    class="transition-all duration-300 ease-in-out text-[27px] font-bold cursor-pointer hover:text-PrimaryOrange"
+                  >
+                    Foster care and a great show of inclusion at Midsumma
+                    Carnival 20...
+                  </h3>
+                  <p class="py-3">
+                    Midsumma Carnival highlights the opening weekend of the
+                    three-week-long Midsumma Festival each year.
+                  </p>
+                  <span class="cursor-pointer orange text-PrimaryOrange">
+                    Read more
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer
+        class="relative flex justify-center text-white bg-black px-mobileSidePad tab:px-pageSidePad"
+      >
+        <div class="flex flex-col max-w-screen-xl pt-5 wrapper">
+          <h1 class="pb-5 text-2xl font-title">UNITYCARE</h1>
+          <div
+            class="pb-5 border-t-2 border-red-800 border-solid seperator"
+          ></div>
+          <div
+            class="lists relative block gap-5 tab:grid tab:grid-cols-[1fr_1fr_1fr] laptop:grid-cols-[1fr_2fr_1fr]"
+          >
+            <div class="listOne">
+              <h5 class="pt-5 text-[12px] font-[500]">CONTACT DETAILS</h5>
+              <li
+                class="pt-5 text-[27px] font-extrabold list-none cursor-pointer transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+              >
+                1800 000 000
+              </li>
+              <li
+                class="pt-5 text-[18px] font-extrabold list-none cursor-pointer transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+              >
+                <a href="">info@unitycare.org.au</a>
+              </li>
+              <div class="flex gap-5 pt-5 logo">
+                <div class="flex w-5 contImg">
+                  <img
+                    class="object-contain w-full"
+                    src="img/facebook-icon-white-png.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex w-5 contImg">
+                  <img
+                    class="object-contain w-full"
+                    src="img/insta.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex w-5 contImg">
+                  <img
+                    class="object-contain w-full"
+                    src="img/X_logo_2023_(white).png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex w-5 contImg">
+                  <img
+                    class="object-contain w-full"
+                    src="img/white-home.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="hidden pt-5 imageWrapper tab:block w-28">
+                <img
+                  class="object-contain w-full"
+                  src="img/registered-charity.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="listTwo">
+              <h5 class="pt-5 text-[12px] font-[400]">USEFUL LINKS</h5>
+              <ul class="twoContains columns-1 gap-x-[20px] laptop:columns-2">
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >Disability services</a
+                  >
+                </li>
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >Foster care</a
+                  >
+                </li>
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >All services</a
+                  >
+                </li>
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >Careers</a
+                  >
+                </li>
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >Governance and privacy</a
+                  >
+                </li>
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >Policy centre</a
+                  >
+                </li>
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >Employment Without Barriers</a
+                  >
+                </li>
+                <li class="pt-5">
+                  <a
+                    class="underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+                    href=""
+                    >Diversity and inclusion</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="listThree text-[12px] font-[400]">
+              <h5 class="pt-5">RECONCILIATION STATEMENT</h5>
+              <p class="pt-5 pb-3 text-base leading-6 tracking-wide">
+                In the spirit of Reconciliation, UNITYCARE acknowledges
+                Aboriginal and Torres Strait Islander peoples as the Traditional
+                Owners and Custodians of this country, and acknowledges their
+                connection to land, water and community. We pay our respect to
+                them, their cultures and customs, and to Elders past, present
+                and emerging.
+              </p>
+              <p
+                class="pt-5 pb-3 text-base underline transition-all duration-300 ease-in-out hover:text-PrimaryGreen"
+              >
+                <a href="">Learn more about our steps towards reconciliation</a>
+              </p>
+              <div class="pt-5 imageWrapper2 w-36 tab:hidden">
+                <img
+                  class="object-contain w-full"
+                  src="img/registered-charity.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="copyright pt-24 pb-9 leading-[0px]">
+            <li class="pt-5 text-[11px] list-none">
+              &copy 2024 UNITYCARE. All rights reserved.
+            </li>
+            <li class="pt-5 text-[11px] list-none">ABN 15 101 252 171</li>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
